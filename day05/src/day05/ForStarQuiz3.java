@@ -1,0 +1,42 @@
+package day05;
+
+import java.util.Scanner;
+
+public class ForStarQuiz3 {
+	
+	//      *
+	//     **
+	//    ***
+	//   ****
+	//  *****
+	public static void main(String[] args) {
+		
+			// 중첩 반복문을 사용해야함
+			// 바깥쪽 반복문은 세로 길이를 나타냅니다.
+			// 안쪽 반복문은 별의 개수인데 점점 늘어나는 변수를 이용해(반복문에 점점 증가하는 요소가 있음)
+			// 줄이 바뀔때마다 별 개수가 늘어나게 처리하라.
+		
+			// 추가 요구사항 : 사용자에게 스캐너로 층수를 입력받게 고쳐주세요.
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt(); // scan.nextInt();에 입력한 값을 int정수 starTowerfloor별타워에 저장한다.
+		scan.close();
+		
+		for (int i = 1; i <= N; i++) { //1~5층 실행 ,  for(초기화;조건식;증감연산)
+			
+			for (int j = 1; j <= N - i; j++) { 
+				System.out.print(" "); //공백에 0을 넣어서 실행되는지 연습해도 좋다.(0은 점점 줄어들게 된다)
+			}
+			for (int k = 1; k <= i; k++) { //k는 i보다 작거나 같다. (*은 점점 늘어나게 된다)
+				System.out.print("*");	
+			}
+			System.out.println();
+			}
+		
+		}
+	
+}	
+
+
+	
+			
+
