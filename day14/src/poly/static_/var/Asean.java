@@ -6,7 +6,7 @@ public class Asean {
 	private int finalTermScore;// 기말고사점수 - 개인점수
 	
 	// 학생 a, b, c, d
-	public static int presentationScore;// 중간고사는 발표로 대체 - 객체들이 공유하는 변수
+	public static int presentationScore;//29점 중간고사는 발표로 대체 - 객체들이 공유하는 변수
 	
 	public Asean(String name, int attendanceScore, int finalTermScore) {
 		this.name = name;
@@ -16,7 +16,7 @@ public class Asean {
 	
 	// 스태틱 블록 내부 코드는 프로그램 시작 즉시 자동으로 한 번 호출됩니다.
 	static {
-		presentationScore = 29;
+		presentationScore = 29;// 정적 초기화자 라고 불림
 	}
 	
 	public void showStudentScore() {

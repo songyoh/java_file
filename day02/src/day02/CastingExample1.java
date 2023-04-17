@@ -8,6 +8,7 @@ public class CastingExample1 {
 		 */
 		byte b = 10; // 1바이트
 		int i = b; // byte -> int로 자동변환.
+		System.out.println(i);
 		
 		char c = '가'; // 2바이트
 		int j = c; // char -> int로 자동변환.
