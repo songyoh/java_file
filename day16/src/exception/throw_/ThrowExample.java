@@ -1,6 +1,6 @@
 package exception.throw_;
 
-public class ThrowExample {
+public class ThrowExample {// 오송이
 
 	public static int calcSum(int n) throws Exception{
 		/*
@@ -12,7 +12,7 @@ public class ThrowExample {
 		}
 		int sum = 0;
 		for(int i = 1; i <= n; i++) {
-			sum += 1;
+			sum += i;
 		}
 		return sum;		
 	}
@@ -23,7 +23,7 @@ public class ThrowExample {
 			System.out.println(new StringBuffer("1~100까지의 누적 합: ").append(result1));
 			int result2 = calcSum(-100);
 			System.out.println(new StringBuffer("1~100까지의 누적 합: ").append(result2));
-		}catch(Exception e) {
+		}catch(Exception e) { // Exception-모든 예외를 처리해준다.
 			e.printStackTrace();
 			System.err.println(new StringBuffer("매개값을 양수로 전달해주세요"));
 		}
